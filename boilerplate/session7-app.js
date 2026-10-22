@@ -17,9 +17,9 @@ function StudentCardExample({ name, major }) {
 
 // Your task: for each variable, write PROPS or STATE and one sentence why.
 //
-// 1. name   ->
-// 2. major  ->
-// 3. likes  ->
+// 1. name   -> PROPS
+// 2. major  -> PROPS
+// 3. likes  -> STATE
 
 
 // ------------------------------------------------------------
@@ -28,10 +28,10 @@ function StudentCardExample({ name, major }) {
 // Test it: render <Counter /> — it should show "Count: 0" with no console errors.
 // ------------------------------------------------------------
 
-____ { useState } from 'react';
+import { useState } from 'react';
 
 function Counter() {
-  const [____, ____] = useState(____);
+  const [count, setCount] = useState(0);
   return <p>Count: {count}</p>;
 }
 
@@ -49,12 +49,14 @@ import { useState } from 'react';
 
 function LikeButton() {
   // TODO 1: create a boolean state variable called isLiked, starting false
-
+    const [isLiked, setisLiked] = useState(false);
   // TODO 2: write a handleClick function that flips isLiked
-
+    const handleClick = () => {
+  setisLiked(!isLiked);
+    };
   return (
-    <button onClick={/* TODO 3 */}>
-      {/* TODO 4: show '♥ Liked' when true, '♡ Like' when false */}
+    <button onClick={handleClick}>
+      {isLiked ? '♥ Liked' : '♡ Like'} {/* TODO 4: show '♥ Liked' when true, '♡ Like' when false */}
     </button>
   );
 }
@@ -78,6 +80,8 @@ function ClickCounter() {
 
   const handleClick = () => {
     // TODO 1: increment clicks (start plain, then make it safe)
+    //setClicks(clicks +1)
+    setClicks(prevClicks => prevClicks + 1);
   };
 
   return (
