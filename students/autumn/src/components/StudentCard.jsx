@@ -1,7 +1,7 @@
 import ClickCounter from './Clicker'
 
 
-function Card({id, grade = "0"}) {
+export default function Card({id, grade = "0"}) {
 
   return (
     <>
@@ -14,4 +14,4 @@ function Card({id, grade = "0"}) {
   )
 }
 
-export default Card
+// export default Card
