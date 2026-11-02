@@ -1,0 +1,43 @@
+.student-id-card {
+  min-width: 0;
+  padding: 24px;
+  border: 1px solid #16803c;
+  border-radius: 14px;
+  background: #b9f6ca;
+  color: #12351f;
+  text-align: left;
+  box-shadow: 0 6px 16px rgb(18 53 31 / 12%);
+}
+
+.student-id-card__label {
+  margin-bottom: 16px;
+  color: #24663a;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.student-id-card h2 {
+  margin: 0 0 8px;
+  color: #12351f;
+}
+
+.student-id-card__grade {
+  color: #24663a;
+}
+
+.student-id-card button {
+  margin-top: 16px;
+  padding: 8px 14px;
+  border: 1px solid #16803c;
+  border-radius: 8px;
+  background: #fff;
+  color: #12351f;
+  font: inherit;
+  cursor: pointer;
+}
+
+.student-id-card button:hover {
+  background: #e5f8ea;
+}
